@@ -1,8 +1,8 @@
-package game2048;
+package game2048.test;
 
+import game2048.Model;
+import game2048.Side;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /** Tests the tilt() method in the up (Side.NORTH) direction only.
  *
@@ -104,6 +104,29 @@ public class TestUpOnly extends TestUtils {
         updateModel(before, 0, 0, false);
         String prevBoard = model.toString();
         boolean changed = model.tilt(Side.NORTH);
+        checkChanged(Side.NORTH, true, changed);
+        checkModel(after, 4, 0, prevBoard, Side.NORTH);
+    }
+
+
+    @Test
+    public void testDown() {
+        int[][] before = new int[][] {
+                {0, 0, 2, 0},
+                {0, 0, 2, 0},
+                {0, 0, 0, 0},
+                {0, 0, 4, 0},
+        };
+        int[][] after = new int[][] {
+                {0, 0, 0, 0},
+                {0, 0, 0, 0},
+                {0, 0, 4, 0},
+                {0, 0, 4, 0},
+        };
+
+        updateModel(before, 0, 0, false);
+        String prevBoard = model.toString();
+        boolean changed = model.tilt(Side.SOUTH);
         checkChanged(Side.NORTH, true, changed);
         checkModel(after, 4, 0, prevBoard, Side.NORTH);
     }

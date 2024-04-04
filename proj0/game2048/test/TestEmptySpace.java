@@ -1,5 +1,7 @@
-package game2048;
+package game2048.test;
 
+import game2048.Board;
+import game2048.Model;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -137,5 +139,7 @@ public class TestEmptySpace {
         b = new Board(rawVals, 0);
 
         assertFalse("Board is full\n" + b, Model.emptySpaceExists(b));
+
     }
+
 }

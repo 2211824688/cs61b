@@ -1,4 +1,6 @@
-package game2048;
+package game2048.test;
+import game2048.Board;
+import game2048.Model;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

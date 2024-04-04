@@ -1,4 +1,6 @@
-package game2048;
+package game2048.test;
+import game2048.Side;
+import game2048.Tile;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
