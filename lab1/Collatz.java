@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Class that prints the Collatz sequence starting from a given number.
  * 
- * @author YOUR NAME HERE
+ * @author yangHaoChen
  */
 public class Collatz {
 
@@ -17,7 +17,7 @@ public class Collatz {
     }
 
     public static void main(String[] args) {
-        System.out.println("Type number:");
+        System.out.println("Enter number:");
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         while (n != 1) {
