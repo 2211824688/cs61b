@@ -50,7 +50,7 @@ public class ULLMap<K, V>  implements Map61B<K, V> {
                 lookup.val = val;
             }
         } else {
-            list = new Entry(key, val, list);
+            list = new Entry(key, val, null);
             size = size + 1;
         }
     }

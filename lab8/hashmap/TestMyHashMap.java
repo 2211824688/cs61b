@@ -3,6 +3,7 @@ package hashmap;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -66,6 +67,7 @@ public class TestMyHashMap {
         b.put("KISS", 5);
         assertNotEquals(null, b.get("KISS"));
         assertNotEquals(null, b.get("starChild"));
+        HashMap<Integer,Integer> map = new HashMap<>();
     }
 
     // assumes put works
